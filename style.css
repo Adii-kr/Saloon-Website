@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+/* Header Section */
+header {
+  width: 100%;
+  height: 90vh;
+  background: url("src/hero.avif") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+header > div {
+  text-align: center;
+  color: #fff;
+  animation: fadeInUp 1s ease-out;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  font-family: "Poetsen One", cursive;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+header h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+header p.lead {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  opacity: 0.85;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Service Cards */
+section.py-5 .card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background: #1a1a1a;
+}
+
+section.py-5 .card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(255, 193, 7, 0.25);
+}
+
+section.py-5 .card img {
+  object-fit: cover;
+  height: 400px;
+}
+
+section.py-5 .card-body {
+  padding: 1.5rem;
+}
+
+section.py-5 .card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+section.py-5 .card-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Gallery Images */
+#gallery .card {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+#gallery .card img {
+  transition: transform 0.4s ease;
+  height: 280px;
+}
+
+#gallery .card:hover img {
+  transform: scale(1.08);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #212529;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a87807;
+}
+
+/* Scissor decoration in the booking section */
+.scissor-img {
+  max-height: 360px;
+  width: auto;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+/* Honeypot field — hidden from real visitors */
+.honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+/* Form styling */
+.form-control,
+.form-select {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #ffc107;
+  box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
+}
+
+.form-control.is-invalid,
+.form-select.is-invalid {
+  border-color: #dc3545;
+}
+
+.form-control.is-invalid:focus,
+.form-select.is-invalid:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.was-validated .form-control:valid,
+.was-validated .form-select:valid {
+  border-color: #28a745;
+}
+
+.was-validated .form-control:valid:focus,
+.was-validated .form-select:valid:focus {
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+/* Form status messages */
+.form-status {
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+  animation: slideInUp 0.3s ease;
+}
+
+.form-status:empty {
+  display: none;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text-danger {
+  color: #dc3545 !important;
+}
+
+.text-success {
+  color: #28a745 !important;
+}
+
+/* Counter styling */
+.counter {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffc107;
+}
+
+/* Navigation enhancements */
+.navbar {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.nav-link {
+  transition: color 0.2s ease;
+  position: relative;
+  margin: 0 0.5rem;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #bca40a;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Top Button */
+.topbtn {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  z-index: 1000;
+  background: linear-gradient(145deg, #2c3f91, #1d2a5f);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+  cursor: pointer;
+}
+
+.topbtn:hover,
+.topbtn:focus-visible {
+  background: linear-gradient(145deg, #3d4ea0, #2d3a70);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.topbtn:active {
+  transform: translateY(-2px);
+}
+
+.topbtn i {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+/* Footer enhancements */
+footer {
+  border-top: 2px solid #ffc107;
+}
+
+footer h4 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+footer p {
+  opacity: 0.85;
+  line-height: 1.8;
+}
+
+footer a {
+  color: #ffc107;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+footer a:hover {
+  opacity: 0.8;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ffc107;
+  color: #000;
+  margin: 0 0.5rem;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.social-link:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(255, 193, 7, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  header h2 {
+    font-size: 1.1rem;
+  }
+
+  .counter {
+    font-size: 2rem;
+  }
+
+  .scissor-img {
+    max-height: 180px;
+    margin-top: 2rem;
+  }
+
+  .topbtn {
+    width: 45px;
+    height: 45px;
+  }
+
+  .topbtn i {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header h2 {
+    font-size: 1rem;
+  }
+
+  header p.lead {
+    font-size: 1rem;
+  }
+
+  section.py-5 .card img {
+    height: 200px;
+  }
+}

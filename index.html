@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SaloonX - Professional Men's Grooming & Barbershop</title>
+    <meta
+      name="description"
+      content="SaloonX — premium men's grooming since 1980. Haircuts, beard trims, shaving, and hair spa services. Book your appointment online at our salon in Greater Noida."
+    />
+    <meta
+      name="keywords"
+      content="barbershop, men's grooming, haircut, beard trim, shaving, hair spa, salon, Greater Noida, professional barber"
+    />
+    <meta name="theme-color" content="#212529" />
+    <meta property="og:title" content="SaloonX - Professional Men's Grooming" />
+    <meta
+      property="og:description"
+      content="Premium barbershop and men's grooming salon with professional stylists. Book your appointment online."
+    />
+    <meta property="og:type" content="business.business" />
+    <meta property="og:url" content="https://saloonx.example.com" />
+    <meta property="og:image" content="src/logo.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SaloonX - Men's Grooming" />
+    <meta
+      name="twitter:description"
+      content="Premium barbershop and grooming salon. Book online today."
+    />
+    <link rel="icon" type="image/png" href="src/logo.png" sizes="96x96" />
+    <link rel="canonical" href="https://saloonx.example.com" />
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="src/logo.png" width="40" alt="SaloonX logo" class="me-2" />
+          <strong>SaloonX</strong>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="text-white">
+      <div class="container">
+        <p class="lead">We know what haircut suits you</p>
+        <h1>Tradition Meets Precision</h1>
+        <h2 class="mb-4">Grooming Legacy Since 1980</h2>
+        <a href="#contact" class="btn btn-outline-light btn-lg">Book Now</a>
+      </div>
+    </header>
+
+    <!-- Services -->
+    <section class="py-5 bg-dark text-white" id="services">
+      <div class="container text-center">
+        <p class="text-warning fs-5">
+          <br />
+          ...<i class="fa-solid fa-scissors fa-bounce mx-2"></i>...
+        </p>
+        <h2 class="mb-4">Our Popular Services</h2>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="card h-100">
+              <img
+                src="src/HairStyle.avif"
+                class="card-img-top"
+                alt="Hair Style"
+                loading="lazy"
+              />
+              <div class="card-body bg-dark text-white">
+                <h5 class="card-title">Hair Style</h5>
+                <p class="card-text">
+                  Trendy, classic, and tailored to your personality.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card h-100">
+              <img
+                src="src/Shaving.jpeg"
+                class="card-img-top"
+                alt="Shaving"
+                loading="lazy"
+              />
+              <div class="card-body bg-dark text-white">
+                <h5 class="card-title">Shaving</h5>
+                <p class="card-text">
+                  Smooth finish with premium grooming products.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card h-100">
+              <img
+                src="src/BeardTrim.avif"
+                class="card-img-top"
+                alt="Beard Trim"
+                loading="lazy"
+              />
+              <div class="card-body bg-dark text-white">
+                <h5 class="card-title">Beard Trim</h5>
+                <p class="card-text">
+                  Precise trims to suit your face structure.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card h-100">
+              <img
+                src="src/hairspa.jpeg"
+                class="card-img-top"
+                alt="Hair Spa"
+                loading="lazy"
+              />
+              <div class="card-body bg-dark text-white">
+                <h5 class="card-title">Hair Spa</h5>
+                <p class="card-text">
+                  Relax and rejuvenate with our spa treatments.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="py-5 bg-dark text-white" id="gallery">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide bg-dark text-light text-center"
+        data-bs-ride="carousel"
+      >
+        <p class="text-warning fs-5">
+          <br />
+          ...<i class="fa-solid fa-scissors fa-bounce mx-2"></i>...
+        </p>
+        <h2 class="mb-4">Gallery</h2>
+        <p class="text-light">
+          Legacy in Every Cut <br />
+          Capturing the soul of our classic barbershop experience.
+        </p>
+
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="src/saloon01.jpg"
+              class="d-block w-100"
+              alt="Barber giving a classic haircut in the shop's vintage chair"
+              loading="lazy"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Classic Barbershop. Eternal Style.</h5>
+              <p>Experience the golden age of grooming.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="src/saloon02.avif"
+              class="d-block w-100"
+              alt="Close-up of a precision fade haircut in progress"
+              loading="lazy"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Old Charm, New Precision</h5>
+              <p>Traditional techniques, modern finesse.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="src/saloon03.avif"
+              class="d-block w-100"
+              alt="Barber styling a client's hair at the salon"
+              loading="lazy"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Timeless Cuts, Vintage Vibes</h5>
+              <p>Step back in time, styled to perfection.</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Why Choose us  -->
+    <section class="bg-dark text-white py-5" id="my-counter">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5">
+            <img
+              class="img-fluid"
+              src="src/model.png"
+              alt="Professional barber portrait"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-md-7">
+            <h2>WHY CHOOSE SALOONX</h2>
+            <h3 class="my-2 fs-4">
+              Experience Excellence in Every Cut and Style
+            </h3>
+            <p>
+              At SaloonX, we blend modern trends with classic grooming to bring
+              out your best look. Our expert barbers, personalized services, and
+              relaxing ambiance make every visit more than just a haircut—it's a
+              premium grooming experience crafted just for you.
+            </p>
+            <br />
+            <div class="row text-center" id="counter-box">
+              <div class="col">
+                <i class="fa-solid fa-user fs-1 mb-2"></i>
+                <h2><span class="counter" data-count="35">0</span>+</h2>
+                <p>Professional Barber</p>
+              </div>
+              <div class="col">
+                <i class="fa-solid fa-scissors fs-1 mb-2"></i>
+                <h2><span class="counter" data-count="132">0</span>+</h2>
+                <p>Stunning Hair Styles</p>
+              </div>
+              <div class="col">
+                <i class="fa-solid fa-users fs-1 mb-2"></i>
+                <h2><span class="counter" data-count="5455">0</span>+</h2>
+                <p>Satisfied Clients</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="services text-center bg-dark text-white" id="contact">
+      <div class="container">
+        <p class="text-warning fs-5">
+          <br />
+          ...<i class="fa-solid fa-scissors fa-bounce mx-2"></i>...
+        </p>
+        <h2 class="fw-bold">Book an Appointment</h2>
+        <p class="text-light">
+          Our stylists are ready to serve you with the best grooming experience.
+        </p>
+
+        <div class="row align-items-center">
+          <!-- Left: Opening Hours -->
+          <div class="col-md-5 text-md-start">
+            <h3 class="text-warning fw-semibold">Opening Hours</h3>
+            <p class="mb-2">
+              Monday to Friday - <strong>07:00 AM - 10:00 PM</strong>
+            </p>
+            <p>Saturday to Sunday - <strong>06:00 AM - 10:30 PM</strong></p>
+          </div>
+
+          <!-- Center: Image -->
+          <div class="col-md-2 d-none d-md-block text-center">
+            <img
+              src="src/scissor.png"
+              alt=""
+              class="scissor-img"
+              loading="lazy"
+            />
+          </div>
+
+          <!-- Right: Form -->
+          <div class="col-md-5">
+            <form id="bookingForm" novalidate>
+              <!-- Honeypot spam trap: hidden from real visitors, bots fill it in -->
+              <input
+                type="text"
+                name="_honey"
+                class="honeypot"
+                tabindex="-1"
+                autocomplete="off"
+                aria-hidden="true"
+              />
+
+              <div class="mb-3 text-start">
+                <label for="bookingName" class="form-label visually-hidden"
+                  >Your Name</label
+                >
+                <input
+                  type="text"
+                  id="bookingName"
+                  name="name"
+                  class="form-control text-dark"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="mb-3 text-start">
+                <label for="bookingPhone" class="form-label visually-hidden"
+                  >Your Phone</label
+                >
+                <input
+                  type="tel"
+                  id="bookingPhone"
+                  name="phone"
+                  class="form-control text-dark"
+                  placeholder="Your Phone"
+                  pattern="[0-9+\-\s]{7,15}"
+                  required
+                />
+              </div>
+              <div class="mb-3 text-start">
+                <label for="bookingEmail" class="form-label visually-hidden"
+                  >Your Email</label
+                >
+                <input
+                  type="email"
+                  id="bookingEmail"
+                  name="email"
+                  class="form-control text-dark"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="mb-3 text-start">
+                <label for="bookingService" class="form-label visually-hidden"
+                  >Service</label
+                >
+                <select
+                  id="bookingService"
+                  name="service"
+                  class="form-select text-dark"
+                  required
+                >
+                  <option value="" disabled selected>Select a Service</option>
+                  <option value="Hair Style">Hair Style</option>
+                  <option value="Shaving">Shaving</option>
+                  <option value="Beard Trim">Beard Trim</option>
+                  <option value="Hair Spa">Hair Spa</option>
+                </select>
+              </div>
+              <div class="mb-3 text-start">
+                <label for="bookingDate" class="form-label visually-hidden"
+                  >Preferred Date</label
+                >
+                <input
+                  type="date"
+                  id="bookingDate"
+                  name="preferred_date"
+                  class="form-control text-dark"
+                  required
+                />
+              </div>
+
+              <button
+                type="submit"
+                id="bookingSubmitBtn"
+                class="btn btn-warning w-100 fw-bold shadow-sm"
+              >
+                Book Now
+              </button>
+
+              <div
+                id="bookingFormStatus"
+                class="form-status mt-3"
+                role="status"
+                aria-live="polite"
+              ></div>
+            </form>
+            <br />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <div class="container">
+        <div class="row mb-4">
+          <!-- Logo & Branding -->
+          <div class="col-md-4 mb-4 mb-md-0">
+            <img
+              src="src/logo.png"
+              width="40"
+              alt="SaloonX logo"
+              class="mb-2"
+            />
+            <h4 class="fw-bold d-inline ms-2">SaloonX</h4>
+            <p class="mt-3 opacity-85">
+              Premium men's grooming & barbershop since 1980. Tradition meets
+              precision.
+            </p>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5 class="fw-bold mb-3">Get in Touch</h5>
+            <p>
+              <i class="fa-solid fa-phone me-2 text-warning"></i>
+              <a href="tel:+917065868929" class="text-decoration-none"
+                >+91 7065868929</a
+              >
+            </p>
+            <p>
+              <i class="fa-solid fa-envelope me-2 text-warning"></i>
+              <a
+                href="mailto:adityakr7065@gmail.com"
+                class="text-decoration-none"
+                >adityakr7065@gmail.com</a
+              >
+            </p>
+            <p>
+              <i class="fa-solid fa-location-dot me-2 text-warning"></i>
+              Greater Noida, Uttar Pradesh
+            </p>
+          </div>
+
+          <!-- Operating Hours -->
+          <div class="col-md-4">
+            <h5 class="fw-bold mb-3">Hours</h5>
+            <p>
+              <strong>Mon-Fri:</strong> 7:00 AM - 10:00 PM<br />
+              <strong>Sat-Sun:</strong> 6:00 AM - 10:30 PM
+            </p>
+          </div>
+        </div>
+
+        <hr class="my-4 border-secondary" />
+
+        <!-- Social & Copyright -->
+        <div class="row align-items-center">
+          <!-- Social Icons -->
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <h5 class="fw-bold mb-3">Follow Us</h5>
+            <div
+              class="d-flex gap-2 justify-content-center justify-content-md-start"
+            >
+              <a
+                href="https://wa.me/917065868929"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Chat on WhatsApp"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/aditya_may_16/"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/aditya-kumar-fullstack"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Copyright -->
+          <div class="col-md-6 text-center text-md-end">
+            <p class="small opacity-85 mb-0">
+              &copy; <span id="copyrightYear">2026</span> SaloonX. All Rights
+              Reserved.
+            </p>
+            <p class="small opacity-75 mt-2">Crafted with ❤️ by Aditya Kumar</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="topbtn" id="backToTopBtn" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
